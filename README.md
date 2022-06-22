@@ -13,11 +13,11 @@ You will not be forking this time, please take some time to read this instructio
 
 1. Create a new repository based on [machine learning project](https://github.com/4GeeksAcademy/machine-learning-python-template/generate) by [clicking here](https://github.com/4GeeksAcademy/machine-learning-python-template).
 2. Open the recently created repostiroy on Gitpod by using the [Gitpod button extension](https://www.gitpod.io/docs/browser-extension/).
-3. Once Gitpod VSCode has finished opening you continue reading `INSTRUCTIONS.md` file.
+3. Once Gitpod VSCode has finished opening you start your project (Read the instructions from the project tutorial 'README.md' file)
 
 ## 🚛 How to deliver this project
 
-Once you are finished creating your logistic regression model, make sure to commit your changes, push to your repository and go to 4Geeks.com to upload the repository link.
+Once you are finished creating your decision tree model, make sure to commit your changes, push to your repository and go to 4Geeks.com to upload the repository link.
 
 ## 📝 Instructions
 
