@@ -13,7 +13,7 @@ You will not be forking this time, please take some time to read this instructio
 
 1. Create a new repository based on [machine learning project](https://github.com/4GeeksAcademy/machine-learning-python-template/generate) by [clicking here](https://github.com/4GeeksAcademy/machine-learning-python-template).
 2. Open the recently created repostiroy on Gitpod by using the [Gitpod button extension](https://www.gitpod.io/docs/browser-extension/).
-3. Once Gitpod VSCode has finished opening you start your project (Read the instructions from the project tutorial 'README.md' file)
+3. Once Gitpod VSCode has finished opening you start your project following the Instructions below.
 
 ## 🚛 How to deliver this project
 
