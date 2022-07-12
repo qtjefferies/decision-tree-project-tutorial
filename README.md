@@ -87,3 +87,5 @@ Again use the app.py to create your final machine learning model.
 Save your final model in the 'models' folder.
 
 In your README file write a brief summary of your cleaning and modeling process.
+
+Solution guide: https://github.com/4GeeksAcademy/decision-tree-project-tutorial/blob/main/solution_guide.ipynb
