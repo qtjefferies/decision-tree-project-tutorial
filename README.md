@@ -58,7 +58,7 @@ The Johns Hopkins University
 
 Go to the following online dataset (`https://raw.githubusercontent.com/4GeeksAcademy/decision-tree-project-tutorial/main/diabetes.csv`) and download the data.
 
-Save it yor in your project's 'data/raw' folder. Time to work on it!
+Save it in your project's 'data/raw' folder. Time to work on it!
 
 **Step 2:**
 
