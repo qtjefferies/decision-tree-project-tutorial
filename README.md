@@ -43,8 +43,7 @@ Data Dictionary:
 
 - Age: Age (years)
 
-- Outcome: Class variable (0 or 1), Class Distribution: (class value 1 is interpreted as "tested positive for
-diabetes")
+- Outcome: Class variable (0 or 1), Class Distribution: (class value 1 is interpreted as "tested positive for diabetes").
 
 Source:
 
@@ -58,6 +57,7 @@ The Johns Hopkins University
 **Step 1:**
 
 Go to the following online dataset (`https://raw.githubusercontent.com/4GeeksAcademy/decision-tree-project-tutorial/main/diabetes.csv`) and download the data.
+
 Save it yor in your project's 'data/raw' folder. Time to work on it!
 
 **Step 2:**
@@ -74,7 +74,7 @@ Now that you have a better knowledge of the data, in your exploratory notebook c
 
 **Step 4:**
 
-Change your decision tree to use 'entropy' as criterion.
+Change your decision tree to use 'entropy' as a criterion.
 
 **Step 5:**
 
