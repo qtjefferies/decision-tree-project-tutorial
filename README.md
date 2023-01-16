@@ -9,7 +9,7 @@
 
 ## 🌱  How to start this project
 
-You will not be forking this time, please take some time to read this instructions:
+You will not be forking this time, please take some time to read these instructions:
 
 1. Create a new repository based on [machine learning project](https://github.com/4GeeksAcademy/machine-learning-python-template/generate) by [clicking here](https://github.com/4GeeksAcademy/machine-learning-python-template).
 2. Open the recently created repostiroy on Gitpod by using the [Gitpod button extension](https://www.gitpod.io/docs/browser-extension/).
@@ -29,7 +29,7 @@ Data Dictionary:
 
 - Pregnancies: Number of times pregnant
 
-- Glucose: Plasma glucose concentration a 2 hours in an oral glucose tolerance test
+- Glucose: Plasma glucose concentration at 2 hours in an oral glucose tolerance test
 
 - BloodPressure: Diastolic blood pressure (mm Hg)
 
