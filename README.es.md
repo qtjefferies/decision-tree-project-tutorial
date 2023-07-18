@@ -1,11 +1,11 @@
 <!-- hide -->
-# Decision Tree Project Tutorial
+# Árboles de decisión
 <!-- endhide -->
 
-- El objetivo de este proyecto es clasificar a los pacientes que tienen o no diabetes, en función de su diagnóstico.
-- Hacer algunos análisis exploratorios básicos y preparar los datos para el modelado.
-- Utiliza árboles de decisión y afina tu modelo. Esta carpeta tiene una guía de solución en caso de que te quedes atascado.
-- No olvides que estás creando software, así que construya canalizaciones en app.py.
+- Comprender un dataset nuevo.
+- Procesarlo aplicando un análisis exploratorio (EDA).
+- Modelar los datos utilizando la regresión lineal regularizada.
+- Analizar los resultados y optimizar el modelo.
 
 ## 🌱  Cómo iniciar este proyecto
 
@@ -19,73 +19,40 @@ Esta vez no se hará Fork, tómate un tiempo para leer estas instrucciones:
 
 Una vez que hayas terminado de resolver los ejercicios, asegúrate de confirmar tus cambios, hazle "push" a el fork de tu repositorio y ve a 4Geeks.com para subir el enlace del repositorio.
 
-## 📝 Instrucciones
+## 📝 Instructions
 
-**Predeciendo la diabetes**:
+### Prediciendo la diabetes
 
-Este conjunto de datos proviene originalmente del Instituto Nacional de Diabetes y Enfermedades Digestivas y Renales. El objetivo es predecir en base a medidas diagnósticas si un paciente tiene diabetes.
+Este conjunto de datos proviene originalmente del Instituto Nacional de Diabetes y Enfermedades Digestivas y Renales. El objetivo es predecir en base a medidas diagnósticas si un paciente tiene o no diabetes.
 
-Diccionario de datos:
+#### Paso 1: Carga del conjunto de datos
 
-- Embarazos: Número de veces embarazadas.
+El conjunto de datos se puede encontrar en esta carpeta de proyecto bajo el nombre `diabetes.csv`. Puedes cargarlo en el código directamente desde el enlace (`https://raw.githubusercontent.com/4GeeksAcademy/decision-tree-project-tutorial/main/diabetes.csv`) o descargarlo y añadirlo a mano en tu repositorio. En este conjunto de datos encontrarás las siguientes variables:
 
-- Glucosa: Concentración de glucosa en plasma a las 2 horas en un test de tolerancia oral a la glucosa.
+- Pregnancies. Número de embarazos del paciente (numérico)
+- Glucose. Concentración de glucosa en plasma a las 2 horas de un test de tolerancia oral a la glucosa (numérico)
+- BloodPressure. Presión arterial diastólica (medida en mm Hg) (numérico)
+- SkinThickness. Grosor del pliegue cutáneo del tríceps (medida en mm) (numérico)
+- Insulin. Insulina sérica de 2 horas (medida en mu U/ml) (numérico)
+- BMI. Índice de masa corporal (numérico)
+- DiabetesPedigreeFunction. Función de pedigrí de diabetes (numérico)
+- Age. Edad del paciente (numérico)
+- Outcome. Variable de clase (0 o 1), siendo 0 negativo en diabetes y 1, positivo (numérico)
 
-- Presión arterial: presión arterial diastólica (mm Hg).
+#### Paso 2: Realiza un EDA completo
 
-- Grosor de la piel: Grosor del pliegue cutáneo del tríceps (mm).
+Este segundo paso es vital para asegurar que nos quedamos con las variables estrictamente necesarias y eliminamos las que no son relevantes o no aportan información. Utiliza el Notebook de ejemplo que trabajamos y adáptalo a este caso de uso.
 
-- Insulina: insulina sérica de 2 horas (mu U/ml).
+Asegúrate de dividir convenientemente el conjunto de datos en `train` y `test` como hemos visto en lecciones anteriores.
 
-- IMC: Índice de masa corporal (peso en kg/(altura en m)^2).
+#### Paso 3: Construye un modelo de árbol de decisión
 
-- DiabetesPedigreeFunction: función de pedigrí de diabetes.
+Comienza a resolver el problema implementando un árbol de decisión y analiza cuál de los dos tipos satisface tus necesidades. Entrénalo y analiza sus resultados. Prueba a modificar la función de cálculo de la pureza de los nodos y utiliza todas las disponibles. Descríbelas y analiza sus resultados graficándolos.
 
-- Edad: años.
+#### Paso 4: Optimiza el modelo anterior
 
-- Resultado: Variable de clase (0 o 1), Distribución de clase: (el valor de clase 1 se interpreta como "diabetes positivo")
+Después de entrenar el árbol con las distintas funciones de pureza, selecciona el mejor de ellos y optimiza sus hiperparámetros utilizando un grid search. 
 
-Fuente:
+#### Paso 5: Guarda el modelo
 
-(a) Propietarios originales: Instituto Nacional de Diabetes y Enfermedades Digestivas y
-Enfermedades Renales.
-(b) Donante de la base de datos: Vincent Sigillito (vgs@aplcen.apl.jhu.edu)
-Centro de Investigación, Líder de Grupo RMI
-Laboratorio de Física Aplicada
-la Universidad Johns Hopkins
-
-**Paso 1:**
-
-Ve al siguiente conjunto de datos en línea (`https://raw.githubusercontent.com/4GeeksAcademy/decision-tree-project-tutorial/main/diabetes.csv`) y descarga los datos.
-
-Guárdalo en la carpeta 'data/raw' de tu proyecto. ¡Es hora de trabajar en ello!
-
-**Paso 2:**
-
-Usa notebook explore.ipynb para encontrar patrones e información valiosa que te ayudarán en tu proceso de limpieza. 
-
-No olvides escribir tus observaciones.
-
-Usa app.py para crear tu pipeline de limpieza. Guarda tus datos limpios en la carpeta 'datos/procesados'.
-
-**Paso 3:**
-
-Ahora que tienes un mejor conocimiento de los datos, en tu notebook exploratorio crea un modelo de árbol de primera decisión con sus datos limpios.
-
-**Paso 4:**
-
-Cambia tu árbol de decisión para usar 'entropía' como criterio.
-
-**Paso 5:**
-
-Hiperajuste su modelo usando GridSearch para encontrar los mejores hiperparámetros.
-
-Entrena tu modelo con los hiperparámetros óptimos.
-
-Vuelve a utilizar app.py para crear tu modelo final de Machine Learning.
-
-Guarda tu modelo final en la carpeta 'modelos'.
-
-En tu archivo README escribe un breve resumen de tu proceso de limpieza y modelado.
-
-Guía de soluciones: https://github.com/4GeeksAcademy/decision-tree-project-tutorial/blob/main/solution_guide.ipynb
+Almacena el modelo en la carpeta correspondiente.

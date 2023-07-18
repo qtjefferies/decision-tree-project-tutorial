@@ -1,91 +1,58 @@
 <!-- hide -->
-# Decision Tree Project Tutorial
+# Decision trees
 <!-- endhide -->
 
-- The goal of this project is to classify patients having diabetes or no, based on their diagnostics.
-- Make some basic exploratory analysis and prepare the data for modeling.
-- Use decision trees and hypertune your model. This folder has a solution guide in case you get stuck.
-- Don't forget that you are creating software, so build pipelines in the app.py
+- Understand a new dataset.
+- Process it by applying exploratory data analysis (EDA).
+- Model the data using logistic regression.
+- Analyze the results and optimize the model.
 
 ## 🌱  How to start this project
 
 You will not be forking this time, please take some time to read these instructions:
 
 1. Create a new repository based on [machine learning project](https://github.com/4GeeksAcademy/machine-learning-python-template/generate) by [clicking here](https://github.com/4GeeksAcademy/machine-learning-python-template).
-2. Open the recently created repostiroy on Gitpod by using the [Gitpod button extension](https://www.gitpod.io/docs/browser-extension/).
-3. Once Gitpod VSCode has finished opening you start your project following the Instructions below.
+2. Open the recently created repository on Gitpod by using the [Gitpod button extension](https://www.gitpod.io/docs/browser-extension/).
+3. Once Gitpod VSCode has finished opening, start your project following the Instructions below.
 
 ## 🚛 How to deliver this project
 
-Once you are finished creating your decision tree model, make sure to commit your changes, push to your repository and go to 4Geeks.com to upload the repository link.
+Once you are finished creating your linear regression model, make sure to commit your changes, push to your repository and go to 4Geeks.com to upload the repository link.
 
 ## 📝 Instructions
 
-**Predicting Diabetes**:
+### Predicting Diabetes
 
-This dataset is originally from the National Institute of Diabetes and Digestive and Kidney Diseases. The objective is to predict based on diagnostic measurements whether a patient has diabetes.
+This dataset originally comes from the National Institute of Diabetes and Digestive and Kidney Diseases. The goal is to predict based on diagnostic measures whether or not a patient has diabetes.
 
-Data Dictionary:
+#### Step 1: Loading the dataset
 
-- Pregnancies: Number of times pregnant
+The dataset can be found in this project folder under the name `diabetes.csv`. You can load it into the code directly from the link (`https://raw.githubusercontent.com/4GeeksAcademy/decision-tree-project-tutorial/main/diabetes.csv`) or download it and add it by hand in your repository. In this dataset you will find the following variables:
 
-- Glucose: Plasma glucose concentration at 2 hours in an oral glucose tolerance test
+- Pregnancies. Number of pregnancies of the patient (numeric)
+- Glucose. Plasma glucose concentration 2 hours after an oral glucose tolerance test (numeric)
+- BloodPressure. Diastolic blood pressure (measured in mm Hg) (numeric)
+- SkinThickness. Triceps skinfold thickness (measured in mm) (numeric)
+- Insulin. 2-hour serum insulin (measured in mu U/ml) (numeric)
+- BMI. Body mass index (numeric)
+- DiabetesPedigreeFunction. Diabetes Pedigree Function (numeric)
+- Age. Age of patient (numeric)
+- Outcome. Class variable (0 or 1), being 0 negative in diabetes and 1, positive (numeric)
 
-- BloodPressure: Diastolic blood pressure (mm Hg)
+#### Step 2: Perform a full EDA
 
-- SkinThickness: Triceps skin fold thickness (mm)
+This second step is vital to ensure that we keep the variables that are strictly necessary and eliminate those that are not relevant or do not provide information. Use the example Notebook we worked on and adapt it to this use case.
 
-- Insulin: 2-Hour serum insulin (mu U/ml)
+Be sure to conveniently divide the data set into `train` and `test` as we have seen in previous lessons.
 
-- BMI: Body mass index (weight in kg/(height in m)^2)
+#### Step 3: Build a regression model
 
-- DiabetesPedigreeFunction: Diabetes pedigree function
+Start solving the problem by implementing a decision tree and analyze which of the two types satisfies your needs. Train it and analyze its results. Try modifying the function for calculating the purity of the nodes and use all the available ones. Describe them and analyze your results by graphing them.
 
-- Age: Age (years)
+#### Step 4: Optimize the previous model
 
-- Outcome: Class variable (0 or 1), Class Distribution: (class value 1 is interpreted as "tested positive for diabetes").
+After training the tree with the different purity functions, it selects the best of them and optimizes its hyperparameters using a grid search.
 
-Source:
+#### Step 5: Save the model
 
-(a) Original owners: National Institute of Diabetes and Digestive and
-Kidney Diseases
-(b) Donor of database: Vincent Sigillito (vgs@aplcen.apl.jhu.edu)
-Research Center, RMI Group Leader
-Applied Physics Laboratory
-The Johns Hopkins University
-
-**Step 1:**
-
-Go to the following online dataset (`https://raw.githubusercontent.com/4GeeksAcademy/decision-tree-project-tutorial/main/diabetes.csv`) and download the data.
-
-Save it in your project's 'data/raw' folder. Time to work on it!
-
-**Step 2:**
-
-Use the explore.ipynb notebook to find patterns and valuable information that will help on your cleaning process. 
-
-Don't forget to write your observations.
-
-Use the app.py to create your cleaning pipeline. Save your clean data in the 'data/processed'  folder.
-
-**Step 3:**
-
-Now that you have a better knowledge of the data, in your exploratory notebook create a first decision tree model with your clean data.
-
-**Step 4:**
-
-Change your decision tree to use 'entropy' as a criterion.
-
-**Step 5:**
-
-Hypertune your model using GridSearch to find the best hyperparameters.
-
-Train your model with the optimal hyperparameters.
-
-Again use the app.py to create your final machine learning model. 
-
-Save your final model in the 'models' folder.
-
-In your README file write a brief summary of your cleaning and modeling process.
-
-Solution guide: https://github.com/4GeeksAcademy/decision-tree-project-tutorial/blob/main/solution_guide.ipynb
+Store the model in the corresponding folder.
