@@ -1,5 +1,5 @@
 <!-- hide -->
-# Árboles de decisión
+# Árboles de decisión - Guía paso a paso
 <!-- endhide -->
 
 - Comprender un dataset nuevo.
@@ -9,17 +9,17 @@
 
 ## 🌱  Cómo iniciar este proyecto
 
-Esta vez no se hará Fork, tómate un tiempo para leer estas instrucciones:
+Sigue las siguientes instrucciones:
 
-1. Crear un nuevo repositorio basado en el [proyecto de Machine Learing](https://github.com/4GeeksAcademy/machine-learning-python-template/generate) [haciendo clic aquí](https://github.com/4GeeksAcademy/machine-learning-python-template).
+1. Crea un nuevo repositorio basado en el [proyecto de Machine Learing](https://github.com/4GeeksAcademy/machine-learning-python-template/generate) [haciendo clic aquí](https://github.com/4GeeksAcademy/machine-learning-python-template).
 2. Abre el repositorio creado recientemente en Codespace usando la [extensión del botón de Codespace](https://docs.github.com/en/codespaces/developing-in-codespaces/creating-a-codespace-for-a-repository#creating-a-codespace-for-a-repository).
 3. Una vez que el VSCode del Codespace haya terminado de abrirse, comienza tu proyecto siguiendo las instrucciones a continuación.
 
 ## 🚛 Cómo entregar este proyecto
 
-Una vez que hayas terminado de resolver los ejercicios, asegúrate de confirmar tus cambios, hazle "push" a el fork de tu repositorio y ve a 4Geeks.com para subir el enlace del repositorio.
+Una vez que hayas terminado de resolver el caso práctico, asegúrate de confirmar tus cambios, haz push a tu repositorio y ve a 4Geeks.com para subir el enlace del repositorio.
 
-## 📝 Instructions
+## 📝 Instrucciones
 
 ### Prediciendo la diabetes
 
@@ -29,15 +29,15 @@ Este conjunto de datos proviene originalmente del Instituto Nacional de Diabetes
 
 El conjunto de datos se puede encontrar en esta carpeta de proyecto bajo el nombre `diabetes.csv`. Puedes cargarlo en el código directamente desde el enlace (`https://raw.githubusercontent.com/4GeeksAcademy/decision-tree-project-tutorial/main/diabetes.csv`) o descargarlo y añadirlo a mano en tu repositorio. En este conjunto de datos encontrarás las siguientes variables:
 
-- Pregnancies. Número de embarazos del paciente (numérico)
-- Glucose. Concentración de glucosa en plasma a las 2 horas de un test de tolerancia oral a la glucosa (numérico)
-- BloodPressure. Presión arterial diastólica (medida en mm Hg) (numérico)
-- SkinThickness. Grosor del pliegue cutáneo del tríceps (medida en mm) (numérico)
-- Insulin. Insulina sérica de 2 horas (medida en mu U/ml) (numérico)
-- BMI. Índice de masa corporal (numérico)
-- DiabetesPedigreeFunction. Función de pedigrí de diabetes (numérico)
-- Age. Edad del paciente (numérico)
-- Outcome. Variable de clase (0 o 1), siendo 0 negativo en diabetes y 1, positivo (numérico)
+- `Pregnancies`. Número de embarazos del paciente (numérico)
+- `Glucose`. Concentración de glucosa en plasma a las 2 horas de un test de tolerancia oral a la glucosa (numérico)
+- `BloodPressure`. Presión arterial diastólica (medida en mm Hg) (numérico)
+- `SkinThickness`. Grosor del pliegue cutáneo del tríceps (medida en mm) (numérico)
+- `Insulin`. Insulina sérica de 2 horas (medida en mu U/ml) (numérico)
+- `BMI`. Índice de masa corporal (numérico)
+- `DiabetesPedigreeFunction`. Función de pedigrí de diabetes (numérico)
+- `Age`. Edad del paciente (numérico)
+- `Outcome`. Variable de clase (0 o 1), siendo 0 negativo en diabetes y 1, positivo (numérico)
 
 #### Paso 2: Realiza un EDA completo
 
@@ -56,3 +56,5 @@ Después de entrenar el árbol con las distintas funciones de pureza, selecciona
 #### Paso 5: Guarda el modelo
 
 Almacena el modelo en la carpeta correspondiente.
+
+> NOTA: Solución: https://github.com/4GeeksAcademy/decision-tree-project-tutorial/blob/main/solution.ipynb
