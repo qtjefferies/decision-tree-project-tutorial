@@ -1,5 +1,5 @@
 <!-- hide -->
-# Decision trees
+# Decision trees - Steep by steep guide
 <!-- endhide -->
 
 - Understand a new dataset.
@@ -9,7 +9,7 @@
 
 ## 🌱  How to start this project
 
-You will not be forking this time, please take some time to read these instructions:
+Follow the instructions below:
 
 1. Create a new repository based on [machine learning project](https://github.com/4GeeksAcademy/machine-learning-python-template/generate) by [clicking here](https://github.com/4GeeksAcademy/machine-learning-python-template).
 2. Open the newly created repository in Codespace using the [Codespace button extension](https://docs.github.com/en/codespaces/developing-in-codespaces/creating-a-codespace-for-a-repository#creating-a-codespace-for-a-repository).
@@ -17,7 +17,7 @@ You will not be forking this time, please take some time to read these instructi
 
 ## 🚛 How to deliver this project
 
-Once you are finished creating your linear regression model, make sure to commit your changes, push to your repository and go to 4Geeks.com to upload the repository link.
+Once you have finished solving the exercises, be sure to commit your changes, push to your repository and go to 4Geeks.com to upload the repository link.
 
 ## 📝 Instructions
 
@@ -29,15 +29,15 @@ This dataset originally comes from the National Institute of Diabetes and Digest
 
 The dataset can be found in this project folder under the name `diabetes.csv`. You can load it into the code directly from the link (`https://raw.githubusercontent.com/4GeeksAcademy/decision-tree-project-tutorial/main/diabetes.csv`) or download it and add it by hand in your repository. In this dataset you will find the following variables:
 
-- Pregnancies. Number of pregnancies of the patient (numeric)
-- Glucose. Plasma glucose concentration 2 hours after an oral glucose tolerance test (numeric)
-- BloodPressure. Diastolic blood pressure (measured in mm Hg) (numeric)
-- SkinThickness. Triceps skinfold thickness (measured in mm) (numeric)
-- Insulin. 2-hour serum insulin (measured in mu U/ml) (numeric)
-- BMI. Body mass index (numeric)
-- DiabetesPedigreeFunction. Diabetes Pedigree Function (numeric)
-- Age. Age of patient (numeric)
-- Outcome. Class variable (0 or 1), being 0 negative in diabetes and 1, positive (numeric)
+- `Pregnancies`. Number of pregnancies of the patient (numeric)
+- `Glucose`. Plasma glucose concentration 2 hours after an oral glucose tolerance test (numeric)
+- `BloodPressure`. Diastolic blood pressure (measured in mm Hg) (numeric)
+- `SkinThickness`. Triceps skinfold thickness (measured in mm) (numeric)
+- `Insulin`. 2-hour serum insulin (measured in mu U/ml) (numeric)
+- `BMI`. Body mass index (numeric)
+- `DiabetesPedigreeFunction`. Diabetes Pedigree Function (numeric)
+- `Age`. Age of patient (numeric)
+- `Outcome`. Class variable (0 or 1), being 0 negative in diabetes and 1, positive (numeric)
 
 #### Step 2: Perform a full EDA
 
@@ -56,3 +56,5 @@ After training the tree with the different purity functions, it selects the best
 #### Step 5: Save the model
 
 Store the model in the corresponding folder.
+
+> NOTE: Solution: https://github.com/4GeeksAcademy/decision-tree-project-tutorial/blob/main/solution.ipynb
